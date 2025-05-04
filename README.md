@@ -151,6 +151,3 @@ This optimization shows how indexing can drastically reduce query time, improvin
 4. Execute SQL queries to solve the listed problems.
 5. Explore query optimization techniques for large datasets.
 
-
-## License
-This project is licensed under the MIT License.
