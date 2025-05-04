@@ -86,28 +86,20 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 1. Find the top 3 most-viewed tracks for each artist using window functions.
 2. Write a query to find tracks where the liveness score is above the average.
 3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
-```sql
-WITH cte
-AS
-(SELECT 
-	album,
-	MAX(energy) as highest_energy,
-	MIN(energy) as lowest_energery
-FROM spotify
-GROUP BY 1
-)
-SELECT 
-	album,
-	highest_energy - lowest_energery as energy_diff
-FROM cte
-ORDER BY 2 DESC
-```
-   
 4. Find tracks where the energy-to-liveness ratio is greater than 1.2.
 5. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
+6. Find the tracks with energy greater than the average energy of their album.
+7. Find the most popular track (by stream) in each album.
+8. Calculate the difference between the highest and lowest danceability in each album.
+9. Find tracks that have energy higher than the album's average energy and have more than 1 million streams.
+10. Rank the tracks in each album by their loudness and find the top 3 loudest tracks for each album.
+11. Find the total number of views and likes per album.
+12. Find tracks that have a speechiness score above the average speechiness of all tracks.
+13. Find the tracks with the highest valence in each album.
+14. Find the albums where the average acousticness is above 0.5.
+15. Find tracks with more than 10 million streams and have an instrumentalness score greater than 0.8.
 
-
-Here’s an updated section for your **Spotify Advanced SQL Project and Query Optimization** README, focusing on the query optimization task you performed. You can include the specific screenshots and graphs as described.
+Here’s an updated section for  **Spotify Advanced SQL Project and Query Optimization** README, focusing on the query optimization task I performed.
 
 ---
 
